@@ -1,8 +1,6 @@
 import Foundation
 import Dependencies
 
-var greeting = "Hello, playground"
+let result: Int = ReadLine.int()
+print(result.description)
 
-Measure.mesure {
-    let count = 0
-}
