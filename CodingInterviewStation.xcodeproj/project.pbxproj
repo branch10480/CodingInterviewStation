@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4813D8AC2A04B10800B2875A /* Dependencies in Frameworks */ = {isa = PBXBuildFile; productRef = 4813D8AB2A04B10800B2875A /* Dependencies */; };
 		48B1C3DF2A04AF3D0043A6B6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B1C3DE2A04AF3D0043A6B6 /* main.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,8 +24,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4813D8AD2A04B37D00B2875A /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		48B1C3DB2A04AF3D0043A6B6 /* CodingInterviewStation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingInterviewStation; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B1C3DE2A04AF3D0043A6B6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		48B1C3E62A04AF5E0043A6B6 /* Dependencies */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Dependencies; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4813D8AC2A04B10800B2875A /* Dependencies in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4813D8AA2A04B10800B2875A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		48B1C3D22A04AF3D0043A6B6 = {
 			isa = PBXGroup;
 			children = (
+				4813D8AD2A04B37D00B2875A /* MyPlayground.playground */,
+				48B1C3E52A04AF5E0043A6B6 /* Packages */,
 				48B1C3DD2A04AF3D0043A6B6 /* CodingInterviewStation */,
 				48B1C3DC2A04AF3D0043A6B6 /* Products */,
+				4813D8AA2A04B10800B2875A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +76,14 @@
 			path = CodingInterviewStation;
 			sourceTree = "<group>";
 		};
+		48B1C3E52A04AF5E0043A6B6 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				48B1C3E62A04AF5E0043A6B6 /* Dependencies */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +100,9 @@
 			dependencies = (
 			);
 			name = CodingInterviewStation;
+			packageProductDependencies = (
+				4813D8AB2A04B10800B2875A /* Dependencies */,
+			);
 			productName = CodingInterviewStation;
 			productReference = 48B1C3DB2A04AF3D0043A6B6 /* CodingInterviewStation */;
 			productType = "com.apple.product-type.tool";
@@ -284,6 +309,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4813D8AB2A04B10800B2875A /* Dependencies */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Dependencies;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 48B1C3D32A04AF3D0043A6B6 /* Project object */;
 }
