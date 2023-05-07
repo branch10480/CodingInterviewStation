@@ -22,4 +22,9 @@ public enum ReadLine {
         let ints: [Int] = readLine()!.split(separator: separator).map{ Int($0)! }
         return (ints[0], ints[1], ints[2])
     }
+
+    public static func string() -> String {
+        print("文字列を入力:", terminator: " ")
+        return readLine()!
+    }
 }
